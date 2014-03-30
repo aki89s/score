@@ -21,6 +21,9 @@
 		870CEA7E18DDD6DC00AD58DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 870CEA6018DDD6DB00AD58DC /* UIKit.framework */; };
 		870CEA8618DDD6DC00AD58DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 870CEA8418DDD6DC00AD58DC /* InfoPlist.strings */; };
 		870CEA8818DDD6DC00AD58DC /* scoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 870CEA8718DDD6DC00AD58DC /* scoreTests.m */; };
+		8738279A18DFD41B001422B3 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8738279918DFD41B001422B3 /* BaseView.m */; };
+		8738279D18DFD46E001422B3 /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8738279C18DFD46E001422B3 /* BaseButton.m */; };
+		87B576A418DDE4070098E3B6 /* ScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B576A318DDE4070098E3B6 /* ScoreView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		870CEA8318DDD6DC00AD58DC /* scoreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "scoreTests-Info.plist"; sourceTree = "<group>"; };
 		870CEA8518DDD6DC00AD58DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		870CEA8718DDD6DC00AD58DC /* scoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scoreTests.m; sourceTree = "<group>"; };
+		8738279818DFD41B001422B3 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		8738279918DFD41B001422B3 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		8738279B18DFD46E001422B3 /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
+		8738279C18DFD46E001422B3 /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
+		87B576A218DDE4070098E3B6 /* ScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreView.h; sourceTree = "<group>"; };
+		87B576A318DDE4070098E3B6 /* ScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +128,12 @@
 				870CEA7218DDD6DB00AD58DC /* ViewController.m */,
 				870CEA7418DDD6DB00AD58DC /* Images.xcassets */,
 				870CEA6318DDD6DB00AD58DC /* Supporting Files */,
+				87B576A218DDE4070098E3B6 /* ScoreView.h */,
+				87B576A318DDE4070098E3B6 /* ScoreView.m */,
+				8738279818DFD41B001422B3 /* BaseView.h */,
+				8738279918DFD41B001422B3 /* BaseView.m */,
+				8738279B18DFD46E001422B3 /* BaseButton.h */,
+				8738279C18DFD46E001422B3 /* BaseButton.m */,
 			);
 			path = score;
 			sourceTree = "<group>";
@@ -249,7 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				870CEA7318DDD6DB00AD58DC /* ViewController.m in Sources */,
+				87B576A418DDE4070098E3B6 /* ScoreView.m in Sources */,
+				8738279A18DFD41B001422B3 /* BaseView.m in Sources */,
 				870CEA6D18DDD6DB00AD58DC /* AppDelegate.m in Sources */,
+				8738279D18DFD46E001422B3 /* BaseButton.m in Sources */,
 				870CEA6918DDD6DB00AD58DC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,9 +393,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "score/score-Prefix.pch";
 				INFOPLIST_FILE = "score/score-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -388,9 +408,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "score/score-Prefix.pch";
 				INFOPLIST_FILE = "score/score-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -455,6 +477,7 @@
 				870CEA8D18DDD6DC00AD58DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		870CEA8E18DDD6DC00AD58DC /* Build configuration list for PBXNativeTarget "scoreTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +486,7 @@
 				870CEA9018DDD6DC00AD58DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ScoreView.h"
+#import "BaseButton.h"
 
 @interface ViewController : UIViewController
+
+@property (nonatomic) NSMutableArray *scoreViewArray;
+//@property (nonatomic) ScoreView *scoreView;
 
 @end
